@@ -1,0 +1,85 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter height of text");
+        int n=sc.nextInt();
+        System.out.println("Enter width of text");
+        int m=sc.nextInt();
+        //for first letter(V)     
+        for(int i=1;i<n+1;i++){
+            for(int j=1;j<i;j++){
+                System.out.print(" ");
+            }for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }for(int j=i;j<n;j++){
+                System.out.print(" ");
+            }for(int j=i;j<n;j++){
+                System.out.print(" ");    
+            }for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }System.out.println();
+        }//for spacing between first and second letter so that it don't look as Y    
+        for(int i=1;i<m;i++){
+                System.out.println(" ");
+        }//for space before second letter and printing second letter(I)
+        for(int i=1;i<n+1;i++){
+            for(int j=1;j<n+1;j++){
+                System.out.print(" ");
+            }for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }System.out.println();
+        }//for spacing between second and third letter   
+         for(int i=1;i<m;i++){
+            System.out.println(" ");
+        }//for third letter(V)
+        for(int i=1;i<n+1;i++){
+            for(int j=1;j<i;j++){
+                System.out.print(" ");
+            }for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }for(int j=i;j<n;j++){
+                System.out.print(" ");
+            }for(int j=i;j<n;j++){
+                System.out.print(" ");    
+            }for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }System.out.println();
+        }//for spacing between third and fourth letter   
+        for(int i=1;i<m;i++){
+            System.out.println(" ");    
+        }//for fourth letter(E)
+        for(int i=1;i<n+1;i++){
+            for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }for(int j=1;j<n+1;j++){
+                if(i%2!=0){
+                System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }System.out.println();
+        }//for spacing between fourth and fifth letter   
+        for(int i=1;i<m;i++){
+            System.out.println(" ");    
+        }//for fifth letter (first half of K)
+        for(int i=1;i<n/2+2;i++){
+            for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }for(int j=i;j<n/2+2;j++){
+                System.out.print(" ");
+            }for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }System.out.println();
+        }//second half of letter K
+        for(int i=1;i<n/2+2;i++){
+            for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }for(int j=1;j<i;j++){
+                System.out.print(" ");
+            }for(int j=1;j<m+1;j++){
+                System.out.print("*");
+            }System.out.println();
+        }sc.close();
+    }
+}
