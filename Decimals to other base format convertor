@@ -1,0 +1,14 @@
+import java.util.*;
+class Function {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Insert a number to convert in other base format");
+        int number = sc.nextInt();
+        System.out.println("Insert the base you want to convert your number into");
+        int base = sc.nextInt();
+        String str = Integer.toString(number, base);
+        System.out.println("Converted Output:");
+        System.out.println(str);
+        sc.close();
+    }
+}
